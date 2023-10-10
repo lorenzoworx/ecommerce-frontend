@@ -3,7 +3,8 @@ import { NavLink, Link } from "react-router-dom";
 import { BsSearch } from "react-icons/bs";
 
 const Header = () => {
-  return <>
+  return (
+  <>
     <header className="header-top-strip py-3">
       <div className="container-xxl">
         <div className="row">
@@ -11,7 +12,7 @@ const Header = () => {
             <p className="text-start text-white mb-0">Free shipping on orders over $100 & Free Returns</p>
           </div>
           <div className="col-6">
-            <p className="text-end text-white mb-0">Telephone: <a className="text-white" href="tel:+2349166384707">+234 916 638 4707</a> </p>
+            <p className="text-end text-white mb-0">Telephone: <a className="text-white" href="tel:+2340000000000">+234 000 000 0000</a> </p>
           </div>
         </div>
       </div>
@@ -104,6 +105,7 @@ const Header = () => {
       </div>
     </header>
   </>
+  )
 };
 
 export default Header;
