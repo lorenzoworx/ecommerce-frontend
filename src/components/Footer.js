@@ -17,7 +17,7 @@ const Footer = () => {
           </div>
           <div className="col-7">
           <div className="input-group">
-              <input type="text" class="form-control py-1" placeholder="Your email address" aria-label="Your email address" aria-describedby="basic-addon2" />
+              <input type="text" className="form-control py-1" placeholder="Your email address" aria-label="Your email address" aria-describedby="basic-addon2" />
               <span className="input-group-text p-2" id="basic-addon2">
                 Subscribe
               </span>
