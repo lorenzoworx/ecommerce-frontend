@@ -186,6 +186,10 @@ const Home = () => {
             <FeaturedProductCard />
             <FeaturedProductCard />
             <FeaturedProductCard />
+            <FeaturedProductCard />
+            <FeaturedProductCard />
+            <FeaturedProductCard />
+            <FeaturedProductCard />
           </div>
         </div>
       </section>
