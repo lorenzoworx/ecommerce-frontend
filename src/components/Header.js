@@ -27,7 +27,7 @@ const Header = () => {
           </div>
           <div className="col-5">
             <div className="input-group">
-              <input type="text" class="form-control py-2" placeholder="Search Product Here" aria-label="Search Product Here" aria-describedby="basic-addon2" />
+              <input type="text" className="form-control py-2" placeholder="Search Product Here" aria-label="Search Product Here" aria-describedby="basic-addon2" />
               <span className="input-group-text p-3" id="basic-addon2">
                 <BsSearch className="fs-5" />
               </span>

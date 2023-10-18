@@ -15,6 +15,7 @@
   --color-777777: #777777;
   --color-1c1c1b: #1c1c1b;
   --color-f2f2f2: #f2f2f2;
+  --color-f7f7f7: #f7f7f7;
 }
 
 body { font-family: 'Rubik', sans-serif !important; }
@@ -53,7 +54,6 @@ a {
   font-weight: 500;
   margin-bottom: 30px;
 }
-
 
 /* Header Part Starts Here*/
 
@@ -505,3 +505,37 @@ a {
   top: 17%;
 }
 /* Our Store Page Ends Here */
+
+/* Contact Page starts Here */
+.contact-inner-wrapper {
+  padding: 30px 20px;
+  border-radius: 15px;
+  background-color: white;
+}
+
+.contact-inner-wrapper > div {
+  width: 48%;
+}
+
+.contact-title {
+  font-size: 26px;
+  font-weight: 500;
+  line-height: 35px;
+  text-align: left;
+}
+
+.contact-inner-wrapper form .form-control {
+  background-color: var(--color-f7f7f7);
+  border-radius: 10px;
+  border-color: transparent;
+  padding: 10px;
+}
+
+.contact-inner-wrapper ul {
+  list-style: none;
+}
+
+.contact-inner-wrapper address, .contact-inner-wrapper a, .contact-inner-wrapper p {
+  color: var(--color-777777);
+} 
+/* Contact Page ends Here */
