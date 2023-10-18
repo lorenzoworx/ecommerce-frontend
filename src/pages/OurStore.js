@@ -5,7 +5,7 @@ import ReactStars from "react-rating-stars-component";
 import FeaturedProductCard from "../components/FeaturedProductCard";
 
 const OurStore = () => {
-  const [grid,setGrid] = useState(4);
+  const [grid,setGrid] = useState(3);
   
   return (
     <>
