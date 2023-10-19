@@ -3,6 +3,7 @@ import BreadCrumb from "../components/BreadCrumb";
 import Meta from "../components/Meta";
 import ReactStars from "react-rating-stars-component";
 import FeaturedProductCard from "../components/FeaturedProductCard";
+import Colors from "../components/Colors";
 
 const OurStore = () => {
   const [grid,setGrid] = useState(3);
@@ -62,23 +63,7 @@ const OurStore = () => {
                   </div>
                   <h5 className="sub-title">Colors</h5>
                   <div>
-                    <ul className="colors ps-0 d-flex flex-wrap gap-10">
-                      <li></li>
-                      <li></li>
-                      <li></li>
-                      <li></li>
-                      <li></li>
-                      <li></li>
-                      <li></li>
-                      <li></li>
-                      <li></li>
-                      <li></li>
-                      <li></li>
-                      <li></li>
-                      <li></li>
-                      <li></li>
-                      <li></li>
-                    </ul>
+                    <Colors />
                   </div>
                   <h5 className="sub-title">Size</h5>
                   <div>
