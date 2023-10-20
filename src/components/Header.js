@@ -1,9 +1,8 @@
-import React from "react";
-import { NavLink, Link } from "react-router-dom";
-import { BsSearch } from "react-icons/bs";
+import React from 'react';
+import { NavLink, Link } from 'react-router-dom';
+import { BsSearch } from 'react-icons/bs';
 
-const Header = () => {
-  return (
+const Header = () => (
   <>
     <header className="header-top-strip py-3">
       <div className="container-xxl">
@@ -12,7 +11,10 @@ const Header = () => {
             <p className="text-start text-white mb-0">Free shipping on orders over $100 & Free Returns</p>
           </div>
           <div className="col-6">
-            <p className="text-end text-white mb-0">Telephone: <a className="text-white" href="tel:+2340000000000">+234 000 000 0000</a> </p>
+            <p className="text-end text-white mb-0">
+              Telephone:
+              <a className="text-white" href="tel:+2340000000000">+234 000 000 0000</a>
+            </p>
           </div>
         </div>
       </div>
@@ -38,23 +40,38 @@ const Header = () => {
               <div>
                 <Link to="/compare-product" className="d-flex align-items-center gap-10 text-white">
                   <img src="images/compare.svg" alt="compare products icon" />
-                  <p className="mb-0">Compare <br /> Products</p>
+                  <p className="mb-0">
+                    Compare
+                    <br />
+                    {' '}
+                    Products
+                  </p>
                 </Link>
               </div>
               <div>
-                <Link to='/wishlist' className="d-flex align-items-center gap-10 text-white">
+                <Link to="/wishlist" className="d-flex align-items-center gap-10 text-white">
                   <img src="images/wishlist.svg" alt="wishlist" />
-                  <p className="mb-0">Favourite <br />Wishlist </p>
+                  <p className="mb-0">
+                    Favourite
+                    <br />
+                    Wishlist
+                    {' '}
+                  </p>
                 </Link>
               </div>
               <div>
-                <Link to='/login' className="d-flex align-items-center gap-10 text-white">
+                <Link to="/login" className="d-flex align-items-center gap-10 text-white">
                   <img src="images/user.svg" alt="user" />
-                  <p className="mb-0">Log in <br />My account </p>
+                  <p className="mb-0">
+                    Log in
+                    <br />
+                    My account
+                    {' '}
+                  </p>
                 </Link>
               </div>
               <div>
-                <Link to='/cart' className="d-flex align-items-center gap-10 text-white">
+                <Link to="/cart" className="d-flex align-items-center gap-10 text-white">
                   <img src="images/cart.svg" alt="cart" />
                   <div className="d-flex flex-column gap-10">
                     <span className="badge bg-white text-dark">0</span>
@@ -105,7 +122,6 @@ const Header = () => {
       </div>
     </header>
   </>
-  )
-};
+);
 
 export default Header;

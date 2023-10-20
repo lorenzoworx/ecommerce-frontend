@@ -1,13 +1,13 @@
-import React, { useState } from "react";
-import BreadCrumb from "../components/BreadCrumb";
-import Meta from "../components/Meta";
-import ReactStars from "react-rating-stars-component";
-import FeaturedProductCard from "../components/FeaturedProductCard";
-import Colors from "../components/Colors";
+import React, { useState } from 'react';
+import ReactStars from 'react-rating-stars-component';
+import BreadCrumb from '../components/BreadCrumb';
+import Meta from '../components/Meta';
+import FeaturedProductCard from '../components/FeaturedProductCard';
+import Colors from '../components/Colors';
 
 const OurStore = () => {
-  const [grid,setGrid] = useState(3);
-  
+  const [grid, setGrid] = useState(3);
+
   return (
     <>
       <Meta title="Our Store" />
@@ -50,14 +50,14 @@ const OurStore = () => {
                     </div>
                   </div>
                   <h5 className="sub-title">Price</h5>
-                  <div className="d-flex align-items-center gap-10" >
+                  <div className="d-flex align-items-center gap-10">
                     <span>$</span>
                     <div className="form-floating">
-                      <input type="number" className="form-control" id="minPriceInput" placeholder="From"/>
+                      <input type="number" className="form-control" id="minPriceInput" placeholder="From" />
                       <label htmlFor="minPriceInput">From</label>
                     </div>
                     <div className="form-floating">
-                      <input type="number" className="form-control" id="maxPriceInput" placeholder="To"/>
+                      <input type="number" className="form-control" id="maxPriceInput" placeholder="To" />
                       <label htmlFor="maxPriceInput">To</label>
                     </div>
                   </div>
@@ -76,7 +76,7 @@ const OurStore = () => {
                     <div className="form-check">
                       <input className="form-check-input" type="checkbox" value="" id="mediumSize" />
                       <label className="form-check-label" htmlFor="mediumSize">
-                      M (2)
+                        M (2)
                       </label>
                     </div>
                     <div className="form-check">
@@ -88,13 +88,13 @@ const OurStore = () => {
                     <div className="form-check">
                       <input className="form-check-input" type="checkbox" value="" id="xLargeSize" />
                       <label className="form-check-label" htmlFor="xLargeSize">
-                      XL (2)
+                        XL (2)
                       </label>
                     </div>
                     <div className="form-check">
                       <input className="form-check-input" type="checkbox" value="" id="xxLargeSize" />
                       <label className="form-check-label" htmlFor="xxLargeSize">
-                      XXL (2)
+                        XXL (2)
                       </label>
                     </div>
                   </div>
@@ -151,7 +151,7 @@ const OurStore = () => {
               <div className="filter-sort-grid mb-4">
                 <div className="d-flex justify-content-between align-items-center">
                   <div className="d-flex align-items-center gap-10">
-                    <p className="mb-0" style={{"width":"78px"}} >Sort By: </p>
+                    <p className="mb-0" style={{ width: '78px' }}>Sort By: </p>
                     <select name="" id="" className="form-control form-select">
                       <option value="manual">Featured</option>
                       <option value="best-selling" selected>Best Selling</option>
@@ -166,20 +166,20 @@ const OurStore = () => {
                   <div className="d-flex align-items-center gap-10">
                     <p className="totalproducts mb-0">21 products</p>
                     <div className="d-flex align-items-center gap-10 grid">
-                      <img src="images/gr4.svg" alt="" className="d-block img-fluid" onClick={()=>{setGrid(3);}} />
-                      <img src="images/gr3.svg" alt="" className="d-block img-fluid" onClick={()=>{setGrid(4);}} />
-                      <img src="images/gr2.svg" alt="" className="d-block img-fluid" onClick={()=>{setGrid(6);}} />
-                      <img src="images/gr.svg" alt="" className="d-block img-fluid" onClick={()=>{setGrid(12);}} />
+                      <img src="images/gr4.svg" alt="" className="d-block img-fluid" onClick={() => { setGrid(3); }} />
+                      <img src="images/gr3.svg" alt="" className="d-block img-fluid" onClick={() => { setGrid(4); }} />
+                      <img src="images/gr2.svg" alt="" className="d-block img-fluid" onClick={() => { setGrid(6); }} />
+                      <img src="images/gr.svg" alt="" className="d-block img-fluid" onClick={() => { setGrid(12); }} />
                     </div>
                   </div>
                 </div>
               </div>
               <div className="products-list pb-5">
                 <div className="d-flex gap-10 flex-wrap">
-                <FeaturedProductCard grid={grid}/>
-                <FeaturedProductCard grid={grid}/>
-                <FeaturedProductCard grid={grid}/>
-                <FeaturedProductCard grid={grid}/>
+                  <FeaturedProductCard grid={grid} />
+                  <FeaturedProductCard grid={grid} />
+                  <FeaturedProductCard grid={grid} />
+                  <FeaturedProductCard grid={grid} />
                 </div>
               </div>
             </div>
@@ -187,7 +187,7 @@ const OurStore = () => {
         </div>
       </div>
     </>
-  )
+  );
 };
 
 export default OurStore;
