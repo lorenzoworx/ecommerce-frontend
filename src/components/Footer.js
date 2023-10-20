@@ -1,10 +1,10 @@
-import React from "react";
-import { Link } from "react-router-dom";
-import { BsLinkedin, BsYoutube, BsGithub, BsInstagram } from "react-icons/bs";
+import React from 'react';
+import { Link } from 'react-router-dom';
+import {
+  BsLinkedin, BsYoutube, BsGithub, BsInstagram,
+} from 'react-icons/bs';
 
-
-const Footer = () => {
-  return (
+const Footer = () => (
   <>
     <footer className="py-4">
       <div className="container-xxl">
@@ -13,10 +13,10 @@ const Footer = () => {
             <div className="footer-top-data d-flex gap-30 align-items-center">
               <img src="images/newsletter.png" alt="newsletter" />
               <h2 className="mb-0 text-white">Subscribe to the newsletter</h2>
-            </div>            
+            </div>
           </div>
           <div className="col-7">
-          <div className="input-group">
+            <div className="input-group">
               <input type="text" className="form-control py-1" placeholder="Your email address" aria-label="Your email address" aria-describedby="basic-addon2" />
               <span className="input-group-text p-2" id="basic-addon2">
                 Subscribe
@@ -34,7 +34,11 @@ const Footer = () => {
             <div>
               <address className="text-white fs-6">
                 Hno: 1 Nowhere drive,
-                Neither here <br /> Nor There
+                Neither here
+                {' '}
+                <br />
+                {' '}
+                Nor There
                 Post Code: 000000
               </address>
               <a href="tel:+2340000000000" className="mt-3 d-block mb-2 text-white">+234 000 000 0000</a>
@@ -90,13 +94,18 @@ const Footer = () => {
       <div className="container-xxl">
         <div className="row">
           <div className="col-12">
-            <p className="text-center mb-0 text-white"> &copy; { new Date().getFullYear()}. Powered by Arogah The Store </p>
+            <p className="text-center mb-0 text-white">
+              {' '}
+              &copy;
+              { new Date().getFullYear()}
+              . Powered by Arogah The Store
+              {' '}
+            </p>
           </div>
         </div>
       </div>
     </footer>
   </>
-  )
-};
+);
 
 export default Footer;

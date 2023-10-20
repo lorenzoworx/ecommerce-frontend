@@ -1,18 +1,19 @@
-import React from "react";
-import ReactStars from "react-rating-stars-component";
-import { Link, useLocation } from "react-router-dom";
+import React from 'react';
+import ReactStars from 'react-rating-stars-component';
+import { Link, useLocation } from 'react-router-dom';
+import PropTypes from 'prop-types';
 
 const FeaturedProductCard = (props) => {
-  const {grid} = props
-  let location = useLocation();
-  
+  const { grid } = props;
+  const location = useLocation();
+
   return (
     <>
       <div className={` ${location.pathname === '/store' ? `gr-${grid}` : 'col-3'}`}>
         <Link className="product-card position-relative">
           <div className="wishlist-icon position-absolute">
             <Link>
-              <img src="images/wish.svg" alt="wishlist" />          
+              <img src="images/wish.svg" alt="wishlist" />
             </Link>
           </div>
           <div className="product-image">
@@ -44,8 +45,12 @@ const FeaturedProductCard = (props) => {
         </Link>
       </div>
     </>
-    
-  )
+
+  );
+};
+
+FeaturedProductCard.propTypes = {
+  grid: PropTypes.number.isRequired,
 };
 
 export default FeaturedProductCard;

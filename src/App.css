@@ -584,3 +584,49 @@ a {
   border-top: 1px solid rgba(0, 0, 0, 0.1);
 }
 /* Compare Product Page ends Here */
+
+/* Login Page starts Here */
+.login-card {
+  padding: 20px;
+  background-color: white;
+  width: 500px;
+  margin: 30px auto;
+  border-radius: 10px;
+}
+
+.login-card h3 {
+  font-size: 19px;
+  font-weight: 500;
+  color: var(--color-777777);
+}
+
+.login-card p {
+  font-size: 13px;
+  color: var(--color-777777);
+}
+
+.login-card .form-control {
+  height: 50px;
+  background-color: var(--color-f5f5f7);
+  color: var(--color-777777);
+  font-size: 14px;
+  border-radius: 10px;
+  border-color: transparent;
+}
+
+.login-card a {
+  font-size: 14px;
+  font-weight: 400;
+  color: var(--color-1c1c1b);
+}
+
+.login-card .signup {
+  background-color: var(--color-febd69);
+  color: var(--color-131921);
+}
+
+.login-card .signup:hover {
+  background-color: var(--color-131921);
+  color: white;
+}
+/* Login Page ends Here */
