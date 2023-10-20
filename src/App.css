@@ -647,3 +647,11 @@ color: var(--color-1c1c1b);
   color: white;
 }
 /* Login Page ends Here */
+
+/* Policy Pages starts Here */
+.policy {
+  background-color: white;
+  padding: 30px;
+  border-radius: 10px;
+}
+/* Policy Pages ends Here */
