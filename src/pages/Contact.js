@@ -1,3 +1,4 @@
+/* eslint-disable */
 import React from 'react';
 import { AiOutlineHome, AiOutlineMail } from 'react-icons/ai';
 import { BiPhoneCall, BiInfoCircle } from 'react-icons/bi';

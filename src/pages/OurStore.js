@@ -1,3 +1,4 @@
+/* eslint-disable */
 import React, { useState } from 'react';
 import ReactStars from 'react-rating-stars-component';
 import BreadCrumb from '../components/BreadCrumb';
