@@ -2,13 +2,14 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import ReactStars from 'react-rating-stars-component';
+import watch from '../images/watch.jpg'
 
 const SpecialProductCard = () => (
   <div className="col-6 mb-3">
     <div className="special-product-card">
       <div className="justify-content-between d-flex">
         <div>
-          <img src="images/watch.jpg" alt="watch" className="img-fluid" />
+          <img src={watch} alt="watch" className="img-fluid" />
         </div>
         <div className="special-product-content">
           <h5 className="brand">Havels</h5>
@@ -17,7 +18,7 @@ const SpecialProductCard = () => (
           <p className="price">
             <span className="red-p">$100</span>
             {' '}
-&nbsp;
+            &nbsp;
             <strike>$200</strike>
           </p>
           <div className="discount-till d-flex align-items-center gap-10">
