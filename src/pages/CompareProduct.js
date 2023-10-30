@@ -2,6 +2,8 @@ import React from 'react';
 import BreadCrumb from '../components/BreadCrumb';
 import Meta from '../components/Meta';
 import Colors from '../components/Colors';
+import cross from '../images/cross.svg';
+import watch from '../images/watch.jpg';
 
 const CompareProduct = () => (
   <>
@@ -12,9 +14,9 @@ const CompareProduct = () => (
         <div className="row">
           <div className="col-3">
             <div className="compare-product-card position-relative">
-              <img src="images/cross.svg" alt="cross" className="position-absolute cross img-fluid" />
+              <img src={cross} alt="cross" className="position-absolute cross img-fluid" />
               <div className="product-card-image">
-                <img src="images/watch.jpg" alt="watch" />
+                <img src={watch} alt="watch" />
               </div>
               <div className="compare-product-details">
                 <h5 className="title">Honor T1</h5>
@@ -49,9 +51,9 @@ const CompareProduct = () => (
           </div>
           <div className="col-3">
             <div className="compare-product-card position-relative">
-              <img src="images/cross.svg" alt="cross" className="position-absolute cross img-fluid" />
+              <img src={cross} alt="cross" className="position-absolute cross img-fluid" />
               <div className="product-card-image">
-                <img src="images/watch.jpg" alt="watch" />
+                <img src={watch} alt="watch" />
               </div>
               <div className="compare-product-details">
                 <h5 className="title">Honor T1</h5>
@@ -86,9 +88,9 @@ const CompareProduct = () => (
           </div>
           <div className="col-3">
             <div className="compare-product-card position-relative">
-              <img src="images/cross.svg" alt="cross" className="position-absolute cross img-fluid" />
+              <img src={cross} alt="cross" className="position-absolute cross img-fluid" />
               <div className="product-card-image">
-                <img src="images/watch.jpg" alt="watch" />
+                <img src={watch} alt="watch" />
               </div>
               <div className="compare-product-details">
                 <h5 className="title">Honor T1</h5>
@@ -123,9 +125,9 @@ const CompareProduct = () => (
           </div>
           <div className="col-3">
             <div className="compare-product-card position-relative">
-              <img src="images/cross.svg" alt="cross" className="position-absolute cross img-fluid" />
+              <img src={cross} alt="cross" className="position-absolute cross img-fluid" />
               <div className="product-card-image">
-                <img src="images/watch.jpg" alt="watch" />
+                <img src={watch} alt="watch" />
               </div>
               <div className="compare-product-details">
                 <h5 className="title">Honor T1</h5>

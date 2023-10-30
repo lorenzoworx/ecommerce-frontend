@@ -16,6 +16,7 @@
   --color-1c1c1b: #1c1c1b;
   --color-f2f2f2: #f2f2f2;
   --color-f7f7f7: #f7f7f7;
+  --color-eaeaea: #eaeaea;
 }
 
 body { font-family: 'Rubik', sans-serif !important; }
@@ -796,3 +797,50 @@ color: var(--color-1c1c1b);
 }
 
 /* Single Product Page ends Here */
+
+/* Cart Page starts Here */
+.cart-header,
+.cart-data {
+  border-bottom: 1px solid var(--color-eaeaea) ;
+}
+.cart-header h4 {
+  font-size: 13px;
+  color: var(--color-777777);
+}
+.cart-col-1 {
+  width: 40%;
+}
+
+.cart-col-1 p {
+  color: var(--color-777777);
+  font-size: 14px;
+}
+
+.cart-col-2 {
+  width: 10%;
+}
+.cart-col-3 {
+  width: 15%;
+}
+
+.cart-col-4 {
+  width: 15%;
+}
+
+.cart-data h5.price {
+  font-size: 14px;
+  color: var(--color-1c1c1b);
+}
+/* Cart Page ends Here */
+
+/* Checkout Page starts Here */
+.total {
+  font-size: 14px;
+  color: var(--color-1c1c1b);
+}
+
+.total-price {
+  font-size: 16px;
+  color: var(--color-777777);
+}
+/* Checkout Page ends Here */
