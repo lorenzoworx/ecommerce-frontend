@@ -1,3 +1,4 @@
+/* stylelint-disable no-descending-specificity */
 * {
   margin: 0;
   padding: 0;
@@ -83,7 +84,7 @@ a {
   font-size: 14px;
   line-height: 18px;
   font-weight: 400;
-  letter-spacing: 0.3;
+  letter-spacing: 0.3px;
   text-transform: uppercase;
 }
 
@@ -518,9 +519,6 @@ footer .input-group-text {
 
 .gr-12 .product-card .product-image {
   width: 270px;
-}
-
-.gr-12 .product-card .product-image {
   height: auto;
 }
 
