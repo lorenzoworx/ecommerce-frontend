@@ -1,8 +1,7 @@
-/* eslint-disable */
 import React from 'react';
 import { Link } from 'react-router-dom';
 import ReactStars from 'react-rating-stars-component';
-import watch from '../images/watch.jpg'
+import watch from '../images/watch.jpg';
 
 const SpecialProductCard = () => (
   <div className="col-6 mb-3">
@@ -41,7 +40,7 @@ const SpecialProductCard = () => (
               <div className="progress-bar" style={{ width: '25%' }} />
             </div>
           </div>
-          <Link className="button">Add to Cart</Link>
+          <Link to="/cart" className="button">Add to Cart</Link>
         </div>
       </div>
     </div>
