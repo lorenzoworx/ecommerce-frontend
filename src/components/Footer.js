@@ -1,4 +1,3 @@
-/* eslint-disable */
 import React from 'react';
 import { Link } from 'react-router-dom';
 import {
@@ -83,10 +82,10 @@ const Footer = () => (
           <div className="col-2">
             <h4 className="text-white">Quick Links</h4>
             <div className="footer-links d-flex flex-column">
-              <Link className="text-white py-2 mb-1">Laptops</Link>
-              <Link className="text-white py-2 mb-1">Headphones</Link>
-              <Link className="text-white py-2 mb-1">Tablets</Link>
-              <Link className="text-white py-2 mb-1">Shoes</Link>
+              <Link to="/store" className="text-white py-2 mb-1">Laptops</Link>
+              <Link to="/store" className="text-white py-2 mb-1">Headphones</Link>
+              <Link to="/store" className="text-white py-2 mb-1">Tablets</Link>
+              <Link to="/store" className="text-white py-2 mb-1">Shoes</Link>
             </div>
           </div>
         </div>
