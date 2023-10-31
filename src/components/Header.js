@@ -1,4 +1,3 @@
-/* eslint-disable */
 import React from 'react';
 import { NavLink, Link } from 'react-router-dom';
 import { BsSearch } from 'react-icons/bs';
@@ -103,13 +102,13 @@ const Header = () => (
                   </button>
                   <ul className="dropdown-menu">
                     <li>
-                      <Link className="dropdown-item" to="">Action</Link>
+                      <Link className="dropdown-item" to="/">Action</Link>
                     </li>
                     <li>
-                      <Link className="dropdown-item" to="">Another action</Link>
+                      <Link className="dropdown-item" to="/">Another action</Link>
                     </li>
                     <li>
-                      <Link className="dropdown-item" to="">Something else here</Link>
+                      <Link className="dropdown-item" to="/">Something else here</Link>
                     </li>
                   </ul>
                 </div>

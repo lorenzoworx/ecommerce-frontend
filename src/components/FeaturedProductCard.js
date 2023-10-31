@@ -1,4 +1,3 @@
-/* eslint-disable */
 import React from 'react';
 import ReactStars from 'react-rating-stars-component';
 import { Link, useLocation } from 'react-router-dom';
@@ -17,11 +16,11 @@ const FeaturedProductCard = (props) => {
   return (
     <>
       <div className={` ${location.pathname === '/store' ? `gr-${grid}` : 'col-3'}`}>
-        <Link to="product/id" className="product-card position-relative">
+        <Link to="/product/id" className="product-card position-relative">
           <div className="wishlist-icon position-absolute">
-            <Link>
+            <button type="button" className="border-0 bg-transparent">
               <img src={wish} alt="wishlist" />
-            </Link>
+            </button>
           </div>
           <div className="product-image">
             <img src={watch} className="img-fluid" alt="Product" />
@@ -38,15 +37,15 @@ const FeaturedProductCard = (props) => {
           </div>
           <div className="action-bar position-absolute">
             <div className="d-flex flex-column gap-15">
-              <Link>
+              <button type="button" className="border-0 bg-transparent">
                 <img src={compare} alt="compare" />
-              </Link>
-              <Link>
+              </button>
+              <button type="button" className="border-0 bg-transparent">
                 <img src={view} alt="view" />
-              </Link>
-              <Link>
+              </button>
+              <button type="button" className="border-0 bg-transparent">
                 <img src={addCart} alt="add cart" />
-              </Link>
+              </button>
             </div>
           </div>
         </Link>
@@ -57,7 +56,11 @@ const FeaturedProductCard = (props) => {
 };
 
 FeaturedProductCard.propTypes = {
-  grid: PropTypes.number.isRequired,
+  grid: PropTypes.number,
+};
+
+FeaturedProductCard.defaultProps = {
+  grid: 12,
 };
 
 export default FeaturedProductCard;
